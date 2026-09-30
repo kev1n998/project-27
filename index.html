@@ -1,8 +1,12 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 
 <meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Fútbol Central</title>
 
@@ -111,6 +115,21 @@ nav a:hover {
     display: block;
 }
 
+/* REPRODUCTOR DEL VIDEO */
+
+.video-container {
+    width: 100%;
+    height: 220px;
+    background: #000;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
 .card-content {
     padding: 20px;
 }
@@ -128,7 +147,8 @@ nav a:hover {
 
 .date {
     color: #999;
-    font-size: 12px;
+    font-size: 11px;
+    letter-spacing: 1px;
 }
 
 .special {
@@ -169,8 +189,8 @@ nav a:hover {
 }
 
 .redaccion img {
-    width: 25px;
-    height: 25px;
+    width: 45px;
+    height: 45px;
     object-fit: cover;
     border-radius: 50%;
     opacity: 0.75;
@@ -187,9 +207,34 @@ footer {
     font-size: 12px;
 }
 
+
+/* ADAPTACIÓN PARA MÓVIL */
+
+@media (max-width: 800px) {
+
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .main-news h1 {
+        font-size: 28px;
+    }
+
+    .logo {
+        font-size: 26px;
+    }
+
+    nav a {
+        margin-right: 12px;
+        font-size: 12px;
+    }
+
+}
+
 </style>
 
 </head>
+
 
 <body>
 
@@ -247,12 +292,25 @@ protagonistas de otra semana de fútbol.
 </section>
 
 
+
 <section class="news-grid">
 
 
+<!-- ================================ -->
+<!-- NOTICIA 1 — VIDEO MEDAL -->
+<!-- ================================ -->
+
 <article class="card">
 
-<img src="meme1.jpg" alt="Actualidad futbolística">
+<div class="video-container">
+
+<iframe
+src="https://medal.tv/clip/lbkS9W4OKqk0k8g9t"
+allow="autoplay; fullscreen"
+allowfullscreen>
+</iframe>
+
+</div>
 
 <div class="card-content">
 
@@ -274,9 +332,16 @@ su momento de gloria.
 </article>
 
 
+
+<!-- ================================ -->
+<!-- NOTICIA 2 -->
+<!-- ================================ -->
+
 <article class="card">
 
-<img src="meme2.jpg" alt="Historia del fútbol">
+<img
+src="meme2.jpg"
+alt="Historia del fútbol">
 
 <div class="card-content">
 
@@ -298,9 +363,16 @@ auténticas leyendas.
 </article>
 
 
+
+<!-- ================================ -->
+<!-- NOTICIA 3 -->
+<!-- ================================ -->
+
 <article class="card">
 
-<img src="meme3.jpg" alt="Actualidad">
+<img
+src="meme3.jpg"
+alt="Actualidad">
 
 <div class="card-content">
 
@@ -325,6 +397,11 @@ de la temporada de la misma manera.
 </section>
 
 
+
+<!-- ================================ -->
+<!-- NOTICIA FALSA -->
+<!-- ================================ -->
+
 <section class="special">
 
 <div class="label">
@@ -332,38 +409,38 @@ de la temporada de la misma manera.
 </div>
 
 <h2>
-El VAR vuelve a ser protagonista tras una
-polémica decisión
+El VAR vuelve a ser protagonista tras una polémica decisión
 </h2>
 
 <p>
-La sala de videoarbitraje ha confirmado esta mañana
-una decisión que ya está provocando todo tipo de
-reacciones entre los aficionados.
+Una decisión aparentemente normal ha provocado
+preguntas entre los aficionados.
+</p>
+
+<p>
+Pero hay una noticia en esta página que no debería
+estar aquí.
 </p>
 
 <p>
 <strong>
-Un jugador recibió una tarjeta amarilla...
-aunque el jugador no estaba sobre el terreno de juego.
+Encuéntrala.
 </strong>
 </p>
 
-<p>
-Los responsables del VAR han abierto una investigación
-para determinar qué ocurrió realmente.
-</p>
-
-<p>
 <a href="noticia-var.html">
-<strong>LEER NOTICIA COMPLETA →</strong>
+
+LEER NOTICIA COMPLETA →
+
 </a>
-</p>
 
 </section>
 
 
-<!-- PEQUEÑA IMAGEN OCULTA A SIMPLE VISTA -->
+
+<!-- ================================ -->
+<!-- REDACCIÓN / FOTO DE IVÁN -->
+<!-- ================================ -->
 
 <div class="redaccion">
 
@@ -373,7 +450,9 @@ REDACCIÓN
 
 <a href="clasificado.html">
 
-<img src="meme4.jpg" alt="Redactor">
+<img
+src="meme4.jpg"
+alt="Redactor">
 
 </a>
 
@@ -381,6 +460,7 @@ REDACCIÓN
 
 
 </div>
+
 
 
 <footer>
@@ -391,4 +471,6 @@ FÚTBOL CENTRAL — Noticias, fútbol y mucho más.
 
 
 </body>
+
 </html>
+```
