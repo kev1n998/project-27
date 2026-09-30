@@ -19,8 +19,6 @@ body {
     color: #222;
 }
 
-/* CABECERA */
-
 header {
     background: #111820;
     color: white;
@@ -65,15 +63,11 @@ nav a:hover {
     color: #18a558;
 }
 
-/* CONTENIDO */
-
 .container {
     width: 1100px;
     max-width: 92%;
     margin: 30px auto;
 }
-
-/* NOTICIA PRINCIPAL */
 
 .main-news {
     background: white;
@@ -97,8 +91,6 @@ nav a:hover {
     color: #666;
     line-height: 1.6;
 }
-
-/* NOTICIAS */
 
 .news-grid {
     display: grid;
@@ -139,16 +131,19 @@ nav a:hover {
     font-size: 12px;
 }
 
-/* NOTICIA ESPECIAL */
-
 .special {
     margin-top: 25px;
     background: white;
-    padding: 25px;
+    padding: 30px;
 }
 
 .special h2 {
     margin-top: 0;
+}
+
+.special p {
+    color: #666;
+    line-height: 1.6;
 }
 
 .special a {
@@ -160,10 +155,31 @@ nav a:hover {
     color: #18a558;
 }
 
-/* FOOTER */
+.redaccion {
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
+
+.redaccion-title {
+    font-size: 11px;
+    color: #999;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.redaccion img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+    opacity: 0.75;
+    border: 2px solid #ddd;
+    cursor: pointer;
+}
 
 footer {
-    margin-top: 60px;
+    margin-top: 40px;
     background: #111820;
     color: #777;
     text-align: center;
@@ -192,11 +208,11 @@ Toda la actualidad del fútbol
 
 <nav>
 
-<a href="#">INICIO</a>
-<a href="#">NOTICIAS</a>
-<a href="#">MERCADO</a>
-<a href="#">CHAMPIONS</a>
-<a href="#">OPINIÓN</a>
+<a href="index.html">INICIO</a>
+<a href="index.html">NOTICIAS</a>
+<a href="index.html">MERCADO</a>
+<a href="index.html">CHAMPIONS</a>
+<a href="index.html">OPINIÓN</a>
 
 </nav>
 
@@ -231,15 +247,12 @@ protagonistas de otra semana de fútbol.
 </section>
 
 
-
 <section class="news-grid">
 
 
-<!-- MEME 1 -->
-
 <article class="card">
 
-<img src="meme1.jpg" alt="Noticia de fútbol">
+<img src="meme1.jpg" alt="Actualidad futbolística">
 
 <div class="card-content">
 
@@ -261,12 +274,9 @@ su momento de gloria.
 </article>
 
 
-
-<!-- MEME 2 -->
-
 <article class="card">
 
-<img src="meme2.jpg" alt="Noticia de fútbol">
+<img src="meme2.jpg" alt="Historia del fútbol">
 
 <div class="card-content">
 
@@ -288,12 +298,9 @@ auténticas leyendas.
 </article>
 
 
-
-<!-- MEME 3 -->
-
 <article class="card">
 
-<img src="meme3.jpg" alt="Noticia de fútbol">
+<img src="meme3.jpg" alt="Actualidad">
 
 <div class="card-content">
 
@@ -318,7 +325,6 @@ de la temporada de la misma manera.
 </section>
 
 
-
 <section class="special">
 
 <div class="label">
@@ -326,27 +332,52 @@ de la temporada de la misma manera.
 </div>
 
 <h2>
-El sistema arbitral vuelve a estar en el centro
-de la polémica
+El VAR vuelve a ser protagonista tras una
+polémica decisión
 </h2>
 
 <p>
-Una decisión aparentemente normal ha provocado
-preguntas entre los aficionados.
-</p>
-
-<p>
-Pero hay una noticia en esta página que no debería
-estar aquí.
+La sala de videoarbitraje ha confirmado esta mañana
+una decisión que ya está provocando todo tipo de
+reacciones entre los aficionados.
 </p>
 
 <p>
 <strong>
-Encuéntrala.
+Un jugador recibió una tarjeta amarilla...
+aunque el jugador no estaba sobre el terreno de juego.
 </strong>
 </p>
 
+<p>
+Los responsables del VAR han abierto una investigación
+para determinar qué ocurrió realmente.
+</p>
+
+<p>
+<a href="noticia-var.html">
+<strong>LEER NOTICIA COMPLETA →</strong>
+</a>
+</p>
+
 </section>
+
+
+<!-- PEQUEÑA IMAGEN OCULTA A SIMPLE VISTA -->
+
+<div class="redaccion">
+
+<div class="redaccion-title">
+REDACCIÓN
+</div>
+
+<a href="clasificado.html">
+
+<img src="meme4.jpg" alt="Redactor">
+
+</a>
+
+</div>
 
 
 </div>
@@ -361,4 +392,3 @@ FÚTBOL CENTRAL — Noticias, fútbol y mucho más.
 
 </body>
 </html>
-
