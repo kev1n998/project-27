@@ -1,12 +1,9 @@
-```html
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
 
 <meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Fútbol Central</title>
 
@@ -30,7 +27,7 @@ header {
 }
 
 .header-container {
-    width: 1100px;
+    width: 1000px;
     max-width: 92%;
     margin: auto;
     padding: 22px 0;
@@ -68,7 +65,7 @@ nav a:hover {
 }
 
 .container {
-    width: 1100px;
+    width: 1000px;
     max-width: 92%;
     margin: 30px auto;
 }
@@ -115,8 +112,6 @@ nav a:hover {
     display: block;
 }
 
-/* REPRODUCTOR DEL VIDEO */
-
 .video-container {
     width: 100%;
     height: 220px;
@@ -126,8 +121,9 @@ nav a:hover {
 
 .video-container iframe {
     width: 100%;
-    height: 100%;
+    height: 220px;
     border: 0;
+    display: block;
 }
 
 .card-content {
@@ -152,13 +148,15 @@ nav a:hover {
 }
 
 .special {
-    margin-top: 25px;
     background: white;
+    margin-top: 25px;
     padding: 30px;
+    border-left: 5px solid #18a558;
 }
 
 .special h2 {
-    margin-top: 0;
+    font-size: 25px;
+    margin: 12px 0;
 }
 
 .special p {
@@ -167,30 +165,28 @@ nav a:hover {
 }
 
 .special a {
-    color: #111820;
+    color: #18a558;
     text-decoration: none;
 }
 
 .special a:hover {
-    color: #18a558;
+    text-decoration: underline;
 }
 
 .redaccion {
     text-align: center;
-    margin-top: 45px;
-    margin-bottom: 20px;
+    margin-top: 35px;
 }
 
 .redaccion-title {
     font-size: 11px;
     color: #999;
     margin-bottom: 8px;
-    letter-spacing: 1px;
 }
 
 .redaccion img {
-    width: 45px;
-    height: 45px;
+    width: 25px;
+    height: 25px;
     object-fit: cover;
     border-radius: 50%;
     opacity: 0.75;
@@ -199,16 +195,13 @@ nav a:hover {
 }
 
 footer {
-    margin-top: 40px;
+    margin-top: 60px;
     background: #111820;
     color: #777;
     text-align: center;
     padding: 30px;
     font-size: 12px;
 }
-
-
-/* ADAPTACIÓN PARA MÓVIL */
 
 @media (max-width: 800px) {
 
@@ -218,15 +211,6 @@ footer {
 
     .main-news h1 {
         font-size: 28px;
-    }
-
-    .logo {
-        font-size: 26px;
-    }
-
-    nav a {
-        margin-right: 12px;
-        font-size: 12px;
     }
 
 }
@@ -253,11 +237,11 @@ Toda la actualidad del fútbol
 
 <nav>
 
-<a href="index.html">INICIO</a>
-<a href="index.html">NOTICIAS</a>
-<a href="index.html">MERCADO</a>
-<a href="index.html">CHAMPIONS</a>
-<a href="index.html">OPINIÓN</a>
+<a href="#">INICIO</a>
+<a href="#">NOTICIAS</a>
+<a href="#">MERCADO</a>
+<a href="#">CHAMPIONS</a>
+<a href="#">OPINIÓN</a>
 
 </nav>
 
@@ -296,9 +280,7 @@ protagonistas de otra semana de fútbol.
 <section class="news-grid">
 
 
-<!-- ================================ -->
-<!-- NOTICIA 1 — VIDEO MEDAL -->
-<!-- ================================ -->
+<!-- NOTICIA 1 - VÍDEO DEL PORTERO -->
 
 <article class="card">
 
@@ -319,12 +301,13 @@ HACE 2 HORAS
 </div>
 
 <h2>
-La nueva generación ya pide su sitio
+El portero protagoniza una liada catastrófica
 </h2>
 
 <p>
-Los protagonistas más inesperados también tienen
-su momento de gloria.
+Lo que parecía una jugada completamente controlada
+terminó convirtiéndose en uno de los mayores errores
+que se recuerdan bajo los palos.
 </p>
 
 </div>
@@ -333,15 +316,11 @@ su momento de gloria.
 
 
 
-<!-- ================================ -->
 <!-- NOTICIA 2 -->
-<!-- ================================ -->
 
 <article class="card">
 
-<img
-src="meme2.jpg"
-alt="Historia del fútbol">
+<img src="meme2.jpg" alt="Historia del fútbol">
 
 <div class="card-content">
 
@@ -364,15 +343,11 @@ auténticas leyendas.
 
 
 
-<!-- ================================ -->
 <!-- NOTICIA 3 -->
-<!-- ================================ -->
 
 <article class="card">
 
-<img
-src="meme3.jpg"
-alt="Actualidad">
+<img src="meme3.jpg" alt="Actualidad">
 
 <div class="card-content">
 
@@ -398,9 +373,7 @@ de la temporada de la misma manera.
 
 
 
-<!-- ================================ -->
 <!-- NOTICIA FALSA -->
-<!-- ================================ -->
 
 <section class="special">
 
@@ -409,38 +382,38 @@ de la temporada de la misma manera.
 </div>
 
 <h2>
-El VAR vuelve a ser protagonista tras una polémica decisión
+El VAR vuelve a ser protagonista tras una
+polémica decisión
 </h2>
 
 <p>
-Una decisión aparentemente normal ha provocado
-preguntas entre los aficionados.
-</p>
-
-<p>
-Pero hay una noticia en esta página que no debería
-estar aquí.
+La sala de videoarbitraje ha confirmado esta mañana
+una decisión que ya está provocando todo tipo de
+reacciones entre los aficionados.
 </p>
 
 <p>
 <strong>
-Encuéntrala.
+Un jugador recibió una tarjeta amarilla...
+aunque el jugador no estaba sobre el terreno de juego.
 </strong>
 </p>
 
+<p>
+Los responsables del VAR han abierto una investigación
+para determinar qué ocurrió realmente.
+</p>
+
+<p>
 <a href="noticia-var.html">
-
-LEER NOTICIA COMPLETA →
-
+<strong>LEER NOTICIA COMPLETA →</strong>
 </a>
+</p>
 
 </section>
 
 
-
-<!-- ================================ -->
-<!-- REDACCIÓN / FOTO DE IVÁN -->
-<!-- ================================ -->
+<!-- PEQUEÑA IMAGEN OCULTA A SIMPLE VISTA -->
 
 <div class="redaccion">
 
@@ -450,9 +423,7 @@ REDACCIÓN
 
 <a href="clasificado.html">
 
-<img
-src="meme4.jpg"
-alt="Redactor">
+<img src="meme4.jpg" alt="Redactor">
 
 </a>
 
@@ -460,7 +431,6 @@ alt="Redactor">
 
 
 </div>
-
 
 
 <footer>
@@ -471,6 +441,4 @@ FÚTBOL CENTRAL — Noticias, fútbol y mucho más.
 
 
 </body>
-
 </html>
-```
