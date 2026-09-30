@@ -27,7 +27,7 @@ header {
 }
 
 .header-container {
-    width: 1000px;
+    width: 1100px;
     max-width: 92%;
     margin: auto;
     padding: 22px 0;
@@ -65,7 +65,7 @@ nav a:hover {
 }
 
 .container {
-    width: 1000px;
+    width: 1100px;
     max-width: 92%;
     margin: 30px auto;
 }
@@ -94,11 +94,13 @@ nav a:hover {
 }
 
 
-/* NOTICIAS */
+/* =========================
+   ARTÍCULOS
+   ========================= */
 
 .news-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     margin-top: 25px;
 }
@@ -116,7 +118,9 @@ nav a:hover {
 }
 
 
-/* VÍDEO MEDAL */
+/* =========================
+   VÍDEOS
+   ========================= */
 
 .video-container {
     width: 100%;
@@ -132,6 +136,17 @@ nav a:hover {
     display: block;
 }
 
+.video-container video {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* =========================
+   TEXTO ARTÍCULOS
+   ========================= */
 
 .card-content {
     padding: 20px;
@@ -155,7 +170,9 @@ nav a:hover {
 }
 
 
-/* PISTA FINAL */
+/* =========================
+   PISTA FINAL
+   ========================= */
 
 .special {
     background: white;
@@ -184,7 +201,9 @@ nav a:hover {
 }
 
 
-/* REDACCIÓN */
+/* =========================
+   REDACCIÓN
+   ========================= */
 
 .redaccion {
     text-align: center;
@@ -202,13 +221,15 @@ nav a:hover {
     height: 25px;
     object-fit: cover;
     border-radius: 50%;
-    opacity: 0.75;
+    opacity: .75;
     border: 2px solid #ddd;
     cursor: pointer;
 }
 
 
-/* FOOTER */
+/* =========================
+   FOOTER
+   ========================= */
 
 footer {
     margin-top: 60px;
@@ -220,7 +241,9 @@ footer {
 }
 
 
-/* MÓVIL */
+/* =========================
+   RESPONSIVE
+   ========================= */
 
 @media (max-width: 900px) {
 
@@ -249,6 +272,10 @@ footer {
 
 <body>
 
+
+<!-- =========================
+     CABECERA
+     ========================= -->
 
 <header>
 
@@ -281,7 +308,9 @@ Toda la actualidad del fútbol
 <div class="container">
 
 
-<!-- CABECERA PRINCIPAL -->
+<!-- =========================
+     NOTICIA PRINCIPAL
+     ========================= -->
 
 <section class="main-news">
 
@@ -307,14 +336,16 @@ protagonistas de otra semana de fútbol.
 
 
 
-<!-- ========================= -->
-<!-- CUATRO ARTÍCULOS -->
-<!-- ========================= -->
+<!-- =========================
+     CINCO ARTÍCULOS
+     ========================= -->
 
 <section class="news-grid">
 
 
-<!-- ARTÍCULO 1 - VÍDEO -->
+<!-- =================================
+     ARTÍCULO 1 — VÍDEO MEDAL
+     ================================= -->
 
 <article class="card">
 
@@ -350,11 +381,58 @@ que se recuerdan bajo los palos.
 
 
 
-<!-- ARTÍCULO 2 - MEME3 -->
+<!-- =================================
+     ARTÍCULO 2 — MEME2.MP4
+     ================================= -->
 
 <article class="card">
 
-<img src="meme3.jpg" alt="Noticia de fútbol">
+<div class="video-container">
+
+<video
+controls
+muted
+loop
+playsinline>
+
+<source src="meme2.mp4" type="video/mp4">
+
+Tu navegador no puede reproducir este vídeo.
+
+</video>
+
+</div>
+
+<div class="card-content">
+
+<div class="date">
+HACE 3 HORAS
+</div>
+
+<h2>
+La jugada que nadie vio venir
+</h2>
+
+<p>
+Una acción inesperada que ha terminado convirtiéndose
+en uno de los momentos más comentados de la jornada.
+</p>
+
+</div>
+
+</article>
+
+
+
+<!-- =================================
+     ARTÍCULO 3 — MEME3.JPG
+     ================================= -->
+
+<article class="card">
+
+<img
+src="meme3.jpg"
+alt="Noticia de fútbol">
 
 <div class="card-content">
 
@@ -363,12 +441,12 @@ HACE 4 HORAS
 </div>
 
 <h2>
-Una historia que empezó hace años
+Una imagen que ya recorre las redes
 </h2>
 
 <p>
-Algunos recuerdos terminan convirtiéndose en
-auténticas leyendas dentro del mundo del fútbol.
+Los aficionados no han tardado en reaccionar
+a una de las imágenes más curiosas de la jornada.
 </p>
 
 </div>
@@ -377,11 +455,15 @@ auténticas leyendas dentro del mundo del fútbol.
 
 
 
-<!-- ARTÍCULO 3 - MEME4 -->
+<!-- =================================
+     ARTÍCULO 4 — MEME4.JPG
+     ================================= -->
 
 <article class="card">
 
-<img src="meme4.jpg" alt="Noticia de fútbol">
+<img
+src="meme4.jpg"
+alt="Noticia de fútbol">
 
 <div class="card-content">
 
@@ -390,12 +472,12 @@ HACE 5 HORAS
 </div>
 
 <h2>
-El fútbol deja imágenes para el recuerdo
+El fútbol vuelve a dejar una escena inolvidable
 </h2>
 
 <p>
-Una imagen puede contar una historia mucho antes
-de que aparezcan todas las respuestas.
+Hay imágenes que terminan convirtiéndose en parte
+de la historia incluso antes de conocer toda la historia.
 </p>
 
 </div>
@@ -404,11 +486,15 @@ de que aparezcan todas las respuestas.
 
 
 
-<!-- ARTÍCULO 4 - MEME5 / IVÁN -->
+<!-- =================================
+     ARTÍCULO 5 — MEME5.JPG / IVÁN
+     ================================= -->
 
 <article class="card">
 
-<img src="meme5.jpg" alt="Noticia de fútbol">
+<img
+src="meme5.jpg"
+alt="Jugador">
 
 <div class="card-content">
 
@@ -417,13 +503,12 @@ HACE 6 HORAS
 </div>
 
 <h2>
-El protagonista que nadie esperaba
+El rostro que empieza a llamar la atención
 </h2>
 
 <p>
-Su identidad todavía no ha sido confirmada,
-pero su imagen ya empieza a circular entre
-los aficionados.
+Su imagen ha comenzado a aparecer en distintos
+lugares y nadie parece tener todavía una explicación.
 </p>
 
 </div>
@@ -435,9 +520,9 @@ los aficionados.
 
 
 
-<!-- ========================= -->
-<!-- NOTICIA FALSA / PISTA -->
-<!-- ========================= -->
+<!-- =========================
+     PISTA FINAL
+     ========================= -->
 
 <section class="special">
 
@@ -446,21 +531,18 @@ los aficionados.
 </div>
 
 <h2>
-El VAR vuelve a ser protagonista tras una
-polémica decisión
+El VAR vuelve a ser protagonista tras una polémica decisión
 </h2>
 
 <p>
-La sala de videoarbitraje ha confirmado esta mañana
-una decisión que ya está provocando todo tipo de
-reacciones entre los aficionados.
+La sala de videoarbitraje confirmó una tarjeta que,
+según los primeros informes, nunca debería haberse mostrado.
 </p>
 
 <p>
-<strong>
-Un jugador recibió una tarjeta amarilla...
-aunque el jugador no estaba sobre el terreno de juego.
-</strong>
+La investigación apunta a que la tarjeta amarilla debía
+mostrarse a un jugador que ni siquiera figuraba entre los
+futbolistas que estaban sobre el terreno de juego.
 </p>
 
 <p>
@@ -478,9 +560,9 @@ para determinar qué ocurrió realmente.
 
 
 
-<!-- ========================= -->
-<!-- REDACCIÓN -->
-<!-- ========================= -->
+<!-- =========================
+     REDACCIÓN
+     ========================= -->
 
 <div class="redaccion">
 
@@ -490,7 +572,9 @@ REDACCIÓN
 
 <a href="clasificado.html">
 
-<img src="meme5.jpg" alt="Redactor">
+<img
+src="meme5.jpg"
+alt="Redacción">
 
 </a>
 
@@ -500,6 +584,10 @@ REDACCIÓN
 </div>
 
 
+
+<!-- =========================
+     FOOTER
+     ========================= -->
 
 <footer>
 
