@@ -145,7 +145,7 @@ nav a:hover {
 
 
 /* =========================
-   TEXTO
+   TEXTO DE ARTÍCULOS
    ========================= */
 
 .card-content {
@@ -167,6 +167,19 @@ nav a:hover {
     color: #999;
     font-size: 11px;
     letter-spacing: 1px;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #18a558;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
 }
 
 
@@ -382,7 +395,47 @@ que se recuerdan bajo los palos.
 
 
 <!-- =================================
-     ARTÍCULO 2 — MEME2.MP4
+     ARTÍCULO 2 — YOUTUBE
+     ================================= -->
+
+<article class="card">
+
+<div class="video-container">
+
+<iframe
+src="https://www.youtube.com/embed/KwChD3lx3cY"
+title="Jugador profesional consigue a Cristiano Ronaldo"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+allowfullscreen>
+</iframe>
+
+</div>
+
+<div class="card-content">
+
+<div class="date">
+HACE 3 HORAS
+</div>
+
+<h2>
+Consigue a Cristiano Ronaldo en un sobre antes de ir al instituto
+</h2>
+
+<p>
+La enorme sorpresa de un jugador profesional de FIFA que
+decidió abrir un último sobre antes de marcharse al instituto.
+Lo que apareció en pantalla dejó completamente sorprendido
+al jugador.
+</p>
+
+</div>
+
+</article>
+
+
+
+<!-- =================================
+     ARTÍCULO 3 — MEME3.MP4
      ================================= -->
 
 <article class="card">
@@ -396,7 +449,7 @@ loop
 playsinline
 preload="metadata">
 
-<source src="./meme2.mp4" type="video/mp4">
+<source src="./meme3.mp4" type="video/mp4">
 
 Tu navegador no puede reproducir este vídeo.
 
@@ -407,47 +460,17 @@ Tu navegador no puede reproducir este vídeo.
 <div class="card-content">
 
 <div class="date">
-HACE 3 HORAS
-</div>
-
-<h2>
-La jugada que nadie vio venir
-</h2>
-
-<p>
-Una acción inesperada que ha terminado convirtiéndose
-en uno de los momentos más comentados de la jornada.
-</p>
-
-</div>
-
-</article>
-
-
-
-<!-- =================================
-     ARTÍCULO 3 — MEME3.JPG
-     ================================= -->
-
-<article class="card">
-
-<img
-src="./meme3.jpg"
-alt="Noticia de fútbol">
-
-<div class="card-content">
-
-<div class="date">
 HACE 4 HORAS
 </div>
 
 <h2>
-Una imagen que ya recorre las redes
+El futbolista que se metió en un lío y se pierde la temporada
 </h2>
 
 <p>
-Los aficionados no han tardado en reaccionar
-a una de las imágenes más curiosas de la jornada.
+Un futbolista profesional ha protagonizado un incidente
+inesperado tras atracar un estanco. El club ha confirmado
+que se perderá el resto de la temporada.
 </p>
 
 </div>
@@ -457,14 +480,27 @@ a una de las imágenes más curiosas de la jornada.
 
 
 <!-- =================================
-     ARTÍCULO 4 — MEME4.JPG
+     ARTÍCULO 4 — MEME4.MP4
      ================================= -->
 
 <article class="card">
 
-<img
-src="./meme4.jpg"
-alt="Noticia de fútbol">
+<div class="video-container">
+
+<video
+controls
+muted
+loop
+playsinline
+preload="metadata">
+
+<source src="./meme4.mp4" type="video/mp4">
+
+Tu navegador no puede reproducir este vídeo.
+
+</video>
+
+</div>
 
 <div class="card-content">
 
@@ -473,12 +509,13 @@ HACE 5 HORAS
 </div>
 
 <h2>
-El fútbol vuelve a dejar una escena inolvidable
+Las skills que desafían todas las reglas
 </h2>
 
 <p>
-Hay imágenes que terminan convirtiéndose en parte
-de la historia incluso antes de conocer toda la historia.
+El futbolista ha vuelto a sorprender a todos con una
+demostración de sus habilidades. Esta vez, sin necesidad
+de tener siquiera un balón delante.
 </p>
 
 </div>
@@ -495,7 +532,7 @@ de la historia incluso antes de conocer toda la historia.
 
 <img
 src="./meme5.jpg"
-alt="Jugador">
+alt="Futbolista">
 
 <div class="card-content">
 
@@ -504,13 +541,21 @@ HACE 6 HORAS
 </div>
 
 <h2>
-El rostro que empieza a llamar la atención
+Nuevo récord: se duerme antes que el tío de Yeray
 </h2>
 
 <p>
-Su imagen ha comenzado a aparecer en distintos
-lugares y nadie parece tener todavía una explicación.
+Un nuevo récord ha sido establecido en una disciplina
+en la que pocos esperaban que pudiera haber competición:
+quedarse dormido con una facilidad absolutamente
+extraordinaria.
 </p>
+
+<a
+href="clasificado.html"
+class="read-more">
+LEER MÁS →
+</a>
 
 </div>
 
